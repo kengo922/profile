@@ -1,0 +1,48 @@
+%body.home
+  %header#header{:style => "display: block; opacity: 1;"}
+    %hgroup.hgroup
+      %h1.logo
+        %a.sample
+          = image_tag asset_path("kengo_matsuno_profile.png"), alt: "icon-02.png"
+      %time{"data-timezone-offset" => "32400"}
+        %b 05/31/2020 09:32am
+        %span#time-zone-name JP
+  #wrap
+    %nav.nav
+      %ul
+        %li
+          = link_to "PROFILE", root_path ,class: "a"
+        %li
+          = link_to "PROFILE", root_path ,class: "a" 
+        %li
+          = link_to "WORKS", root_path ,class: "a"
+        %li
+          = link_to "CONTACT", root_path ,class: "a" 
+      -# #social
+      -#   %a#facebook{:href => "https://www.facebook.com/supremeofficial", :target => "_blank"}
+      -#   %a#instagram{:href => "http://instagram.com/supremenewyork", :target => "_blank"}
+      -#   %a#app_store{:href => "https://itunes.apple.com/us/app/supreme/id664573705?mt=8", :target => "_blank"}
+  -# #background-image-container
+  -#   %img#background-image{"data-image" => "//assets.supremenewyork.com/assets/bg/4-7b9b4f69751409d8e2ac8842ad103f9f.gif", :height => "702", :src => "//assets.supremenewyork.com/assets/bg/4-7b9b4f69751409d8e2ac8842ad103f9f.gif", :style => "opacity: 1; display: block;", :width => "988"}/
+  -# %footer#nav{:style => "opacity: 1;"}
+  -#   #mobile_nav
+  -#     %ul
+  -#       %li
+  -#         %a{:href => "http://www.supremenewyork.com/news"}
+  -#           %span news
+  -#       %li
+  -#         %a{:href => "/previews/springsummer2020"}
+  -#           %span preview
+  -#       %li
+  -#         %a.lookbook_link{:href => "/lookbooks"}
+  -#           %span lookbook
+  -#     %ul
+  -#       %li
+  -#         %a.shop_link{:href => "/shop"}
+  -#           %span shop
+  -#       %li
+  -#         %a.no-right-padding{:href => "/random/tupac"}
+  -#           %span random
+  -#       %li
+  -#         %a{:href => "/stores"}
+  -#           %span stores
