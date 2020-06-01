@@ -1,23 +1,25 @@
-%body.home
-  %header#header{:style => "display: block; opacity: 1;"}
-    %hgroup.hgroup
-      %h1.logo
-        %a.sample
-          = image_tag asset_path("kengo_matsuno_profile.png"), alt: "icon-02.png"
-      %time{"data-timezone-offset" => "32400"}
-        %b 05/31/2020 09:32am
-        %span#time-zone-name JP
-  #wrap
+.home
+  %header.header
+  .main
+    .main_logo
+      .logo
+        = image_tag asset_path("kengo_matsuno_profile.png"), alt: "icon-02.png"
+    %time.time
+      %b#view_clock
+      %b#time-zone-name JP
     %nav.nav
       %ul
         %li
-          = link_to "PROFILE", root_path ,class: "a"
+          = link_to "PROFILE", root_path ,class: "word"
         %li
-          = link_to "PROFILE", root_path ,class: "a" 
+          = link_to "PROFILE", root_path ,class: "word"
         %li
-          = link_to "WORKS", root_path ,class: "a"
+          = link_to "WORKS", root_path ,class: "word"
         %li
-          = link_to "CONTACT", root_path ,class: "a" 
+          = link_to "CONTACT", root_path ,class: "word"
+  %footer.footer
+    .footer__title
+      = link_to "2020 Creator:Kengo Matsuno", '#', class: "footer__title--text"
       -# #social
       -#   %a#facebook{:href => "https://www.facebook.com/supremeofficial", :target => "_blank"}
       -#   %a#instagram{:href => "http://instagram.com/supremenewyork", :target => "_blank"}

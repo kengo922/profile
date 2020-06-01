@@ -1,22 +1,19 @@
-// if (!window._gaq) {
-//   var _gaq = _gaq || [];
-//   _gaq.push(['_setAccount', "UA-104557-18"]);
-//   _gaq.push(['_trackPageview']);
+timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
 
-//   (function() {
-//     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-//     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-//     if($("script[src='"+ga.src+"']").size() == 0){
-//       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-//     }
-//   })();
+function clock() {
+	document.getElementById("view_clock").innerHTML = getNow();
+}
 
-//   ga_track('pageview', 'mp_only')
-// } else {
-//   ga_track('pageview');
-// }
+function getNow() {
+	var now = new Date();
+	var year = now.getFullYear();
+	var mon = now.getMonth()+1; //１を足すこと
+	var day = now.getDate();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
 
-// $('#mobile_nav a').on('click', function(e){
-//   var text = $(e.target).text();
-//   window._gaq.push(['_trackEvent', 'footer-nav', text])
-// });
+	//出力用
+	var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒"; 
+	return s;
+}
