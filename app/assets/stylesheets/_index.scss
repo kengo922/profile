@@ -1,105 +1,178 @@
-body {
-  font-size: 0.6875em;
+html, body{
+  margin: 0;         /* 余白の削除 */
+  padding: 0;        /* 余白の削除 */
+  width:100%;
+  height:100%;
   height: 100%;
-  min-width: 69.09091em !important;
-  padding: 0 1.09091em;
-  font-family: "Courier New", Courier, Monaco;
-  margin: 0;
-  display: block;
+}
+.wrapper {
+  background-image: image-url("98e5e926.jpg");
+  background-size: cover;
+  height: 700px;
+  // background-size: contain;
+  // width: 100%;
+  // height: 700px;
+  // background-position: left top;
+	// background-repeat: no-repeat;
+  // background-size: 100% auto;
+  // background-size:cover;
+  // height:100%;
+  // min-width: 69.09091em !important;
+  // padding: 0 1.09091em;
+  // margin: 0;
+  // padding:160px 0 160px 0;    /* 上下に160pxを余白を取る */
+  // font-family: "Courier New", Courier, Monaco
+  // background-color: rgba(0,0,0,0.4);
+  // display: block;
+}
+.main{
+  height: 100%;
+  background: rgba(0,0,0,0.6);
 }
 
-.home{
-  opacity: 1;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  margin: 0 auto 0 auto;
-  // margin-top: -4.18182em;
-  z-index: 1000;
-  
-}
-#header{
-  margin: 0 auto 0 auto;
-  // margin-top: -4.18182em;
-  z-index: 1000;
-  background: transparent;
-  height: 50%;
-  // margin: -20.45455em auto 4.09091em;
-  position: relative;
-  text-align: center;
+.header{
+  height: 20px;
   width: 100%;
+  background-color: black;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
-
-#wrap{
-  opacity: 1; 
-  display: block;
-  height: 42.72727em;
-  margin: 0 auto;
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 60.54545em;
-}
-.nav{
-  opacity: 1;
-  margin: 6.36364em 0 0 25.54545em;
-  overflow: visible;
-  width: 35em;
-}
-
-.hgroup {
-  // position: absolute;
-  bottom: 0;
+.secondary{
+  margin: 0;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  // margin-left: -9.09091em;
-  // *margin-left: -100px;
-  // width: 18.18182em;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+}
+.time{
+  text-align:center;
+  font-size: 0;
 }
 
-.logo {
-  background-color: transparent;
-  border: 0;
-  display: block;
-  background-size: 13.63636em 4.09091em;
-  // width: 13.63636em;
-  // height: 4.09091em;
-  margin: 0 auto;
+.view_clock,.view_area {
+  color: white;
+  font-family: "Courier New", Courier, Monaco;
+  display: inline-block;
+  font-size: 16px;
 }
-li {
+
+
+.wrap {
+  text-align:center;
+}
+.inline-block{
   display: list-item;
-  text-align: -webkit-match-parent;
-}
-ul {
-  list-style: none;
-  padding: 0;
-  list-style-type: disc;
+  list-style: none; //点隠し
 }
 
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-a {
+.word {
   padding: 7px 40px 7px 0;
   color: white;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
-}
-#social {
-  margin-top: 35px;
+  font-family: "Courier New", Courier, Monaco;
 }
 
-a.sample img {
+
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  background-color: black;
+}             
+.footer__title{
+  text-align: center;
+  line-height: 20px;
+}
+
+.footer__title--text{
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.image{
   width: 300px;  /* 横幅を200pxに */
 }
 
-// @media (max-width: 63.75em){
-//   body.home, body.layout1, body.news, body.previews {
-//       min-width: 0 !important;
-//   }
+
+// p {
+//   text-align: center;
+//   margin: 10px 0 0;
+//   bottom: 0; /*下に固定*/
 // }
+// small {
+//   font-size: 8px;
+//   color: white;
+// }
+
+
+
+
+
+// #social {
+//   margin-top: 35px;
+// }
+
+// .home{
+//   opacity: 1;
+//   background-color: rgb(0, 0, 0);
+//   // color: white;
+//   margin: 0 auto 0 auto;
+//   // margin-top: -4.18182em;
+//   z-index: 1000;
+
+//   font-family: "Courier New", Courier, Monaco;
+// }
+
+  // position: relative;/*←相対位置*/
+  // opacity: 1; 
+  // display: block;
+  // height: 42.72727em;
+  // margin: 0 auto;
+  // max-width: 100%;
+  // overflow: hidden;
+  // position: relative;
+  // width: 60.54545em;
+
+// .nav{
+//   opacity: 1;
+//   margin: 6.36364em 0 0 25.54545em;
+//   overflow: visible;
+//   width: 35em;
+// }
+
+// .hgroup {
+//   // position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   // margin-left: -9.09091em;
+//   // *margin-left: -100px;
+//   // width: 18.18182em;
+// }
+
+// .logo {
+//   background-color: transparent;
+//   border: 0;
+//   display: block;
+//   background-size: 13.63636em 4.09091em;
+//   // width: 13.63636em;
+//   // height: 4.09091em;
+//   margin: 0 auto;
+// }
+
+
+// // @media (max-width: 63.75em){
+// //   body.home, body.layout1, body.news, body.previews {
+// //       min-width: 0 !important;
+// //   }
+// // }
