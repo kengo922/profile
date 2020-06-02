@@ -1,8 +1,17 @@
-body {
-  background-image: url("98e5e926.jpg");
+html, body{
+  margin: 0;         /* 余白の削除 */
+  padding: 0;        /* 余白の削除 */
+  width:100%;
+  height:100%;
+  height: 100%;
+}
+.wrapper {
+  background-image: image-url("98e5e926.jpg");
   background-size: cover;
   height: 700px;
-
+  // background-size: contain;
+  // width: 100%;
+  // height: 700px;
   // background-position: left top;
 	// background-repeat: no-repeat;
   // background-size: 100% auto;
@@ -11,15 +20,14 @@ body {
   // min-width: 69.09091em !important;
   // padding: 0 1.09091em;
   // margin: 0;
-  // position: relative;
+  // padding:160px 0 160px 0;    /* 上下に160pxを余白を取る */
   // font-family: "Courier New", Courier, Monaco
   // background-color: rgba(0,0,0,0.4);
   // display: block;
 }
-.home{
+.main{
   height: 100%;
   background: rgba(0,0,0,0.6);
-
 }
 
 .header{
@@ -31,8 +39,89 @@ body {
   top: 0px;
   left: 0px;
 }
+.secondary{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+}
+.time{
+  text-align:center;
+  font-size: 0;
+}
+
+.view_clock,.view_area {
+  color: white;
+  font-family: "Courier New", Courier, Monaco;
+  display: inline-block;
+  font-size: 16px;
+}
 
 
+.wrap {
+  text-align:center;
+}
+.inline-block{
+  display: list-item;
+  list-style: none; //点隠し
+}
+
+.word {
+  padding: 7px 40px 7px 0;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Courier New", Courier, Monaco;
+}
+
+
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  background-color: black;
+}             
+.footer__title{
+  text-align: center;
+  line-height: 20px;
+}
+
+.footer__title--text{
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.image{
+  width: 300px;  /* 横幅を200pxに */
+}
+
+
+// p {
+//   text-align: center;
+//   margin: 10px 0 0;
+//   bottom: 0; /*下に固定*/
+// }
+// small {
+//   font-size: 8px;
+//   color: white;
+// }
+
+
+
+
+
+// #social {
+//   margin-top: 35px;
+// }
 
 // .home{
 //   opacity: 1;
@@ -44,22 +133,7 @@ body {
 
 //   font-family: "Courier New", Courier, Monaco;
 // }
-// #header{
-//   margin: 0 auto 0 auto;
-//   // margin-top: -4.18182em;
-//   z-index: 1000;
-//   background: transparent;
-//   height: 50%;
-//   // margin: -20.45455em auto 4.09091em;
-//   position: relative;
-//   text-align: center;
-//   width: 100%;
-// }
 
-.wrap{
-
-  
-}
   // position: relative;/*←相対位置*/
   // opacity: 1; 
   // display: block;
@@ -96,73 +170,6 @@ body {
 //   margin: 0 auto;
 // }
 
-ul {
-  list-style: none; //点隠し
-  padding: 0;
-  list-style-type: disc;
-}
-.li {
-  display: list-item;
-}
-
-
-// h1 {
-//   display: block;
-//   font-size: 2em;
-//   margin-block-start: 0.67em;
-//   margin-block-end: 0.67em;
-//   margin-inline-start: 0px;
-//   margin-inline-end: 0px;
-//   font-weight: bold;
-// }
-.word {
-  padding: 7px 40px 7px 0;
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-}
-.footer {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  height: 20px;
-  background-color: black;
-}
-.footer__title{
-  text-align: center;
-  line-height: 20px;
-}
-
-.footer__title--text{
-  text-decoration: none;
-  color: #fff;
-  font-size: 10px;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-// p {
-//   text-align: center;
-//   margin: 10px 0 0;
-//   bottom: 0; /*下に固定*/
-// }
-// small {
-//   font-size: 8px;
-//   color: white;
-// }
-
-
-
-
-
-// #social {
-//   margin-top: 35px;
-// }
-
-// a.sample img {
-//   width: 300px;  /* 横幅を200pxに */
-// }
 
 // // @media (max-width: 63.75em){
 // //   body.home, body.layout1, body.news, body.previews {

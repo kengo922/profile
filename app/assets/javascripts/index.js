@@ -1,7 +1,8 @@
-timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
 
+//時間を表示するJS
+timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
 function clock() {
-	document.getElementById("view_clock").innerHTML = getNow();
+	document.querySelector(".view_clock").innerHTML = getNow();
 }
 
 function getNow() {
@@ -12,8 +13,30 @@ function getNow() {
 	var hour = now.getHours();
 	var min = now.getMinutes();
 	var sec = now.getSeconds();
-
 	//出力用
-	var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒"; 
+	var s = `${year}/${mon}/${day} ${hour}:${min}:${sec}  JP `; 
 	return s;
 }
+
+//画面のサイズを自動で変更するJS
+$(document).ready(function () {
+    hsize = $(window).height();
+    $("section").css("height", hsize + "px");
+  });
+  $(window).resize(function () {
+    hsize = $(window).height();
+    $("section").css("height", hsize + "px");
+  });
+  
+//背景ランダムで切り替わる
+//   jQuery(function($) {
+//     $('.wrapper').bgSwitcher({
+//         images: ['bg1.jpg','bg2.jpg','bg3.jpg'], // 切替背景画像を指定
+//         interval: 3000, // 背景画像を切り替える間隔を指定 3000=3秒
+//         loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+//         shuffle: true, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+//         effect: "blind", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+//         duration: 500, // エフェクトの時間を指定します。
+//         easing: "swing" // エフェクトのイージングをlinear,swingから指定
+//     });
+// });

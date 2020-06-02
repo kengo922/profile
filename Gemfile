@@ -62,3 +62,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "haml-rails"
 gem "pry-rails"
+gem 'jquery-rails' #JSを起動させる為に導入した
+gem 'jquery-bgswitcher-rails'

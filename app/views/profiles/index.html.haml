@@ -1,25 +1,29 @@
-.home
-  %header.header
+.wrapper#section
   .main
-    .main_logo
+    %header.header
+    .secondary 
       .logo
-        = image_tag asset_path("kengo_matsuno_profile.png"), alt: "icon-02.png"
-    %time.time
-      %b#view_clock
-      %b#time-zone-name JP
-    %nav.nav
-      %ul
-        %li
-          = link_to "PROFILE", root_path ,class: "word"
-        %li
-          = link_to "PROFILE", root_path ,class: "word"
-        %li
-          = link_to "WORKS", root_path ,class: "word"
-        %li
-          = link_to "CONTACT", root_path ,class: "word"
-  %footer.footer
-    .footer__title
-      = link_to "2020 Creator:Kengo Matsuno", '#', class: "footer__title--text"
+        = image_tag asset_path("kengo_matsuno_plofile1.png"), alt: "icon-02.png",class: "image"
+      .time
+        .view_clock 
+        .view_area 
+      %nav.nav
+        %ul.wrap
+          %li.inline-block
+            = link_to "PROFILE", root_path ,class: "word"
+          %li.inline-block
+            = link_to "SKILL", root_path ,class: "word"
+          %li.inline-block
+            = link_to "WORKS", root_path ,class: "word"
+          %li.inline-block
+            = link_to "CONTACT", root_path ,class: "word"
+    %footer.footer
+      .footer__title
+        = link_to "2020 Creator:Kengo Matsuno", '#', class: "footer__title--text"
+
+
+
+
       -# #social
       -#   %a#facebook{:href => "https://www.facebook.com/supremeofficial", :target => "_blank"}
       -#   %a#instagram{:href => "http://instagram.com/supremenewyork", :target => "_blank"}
