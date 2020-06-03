@@ -2,7 +2,7 @@
 //時間を表示するJS
 timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
 function clock() {
-	document.querySelector(".view_clock").innerHTML = getNow();
+	document.getElementById("clock").innerHTML = getNow();
 }
 
 function getNow() {

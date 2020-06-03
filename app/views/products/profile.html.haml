@@ -7,14 +7,78 @@
       .profile_image
         = image_tag asset_path("nantyan.jpg"),class: "picture", alt: "nantyan.jpg"
       .profile_career
-        .career_title
-          ・名前
+        .name_title
+          .title
+            《名前》
           .name
             松野健吾
+        .educational_background
+          .title
+            《学歴》
+          .text
+            %ul.text_educational
+              %li 2015年 3月 大同大学工学部総合機械工学科機械システム専攻 (学士)
+              %li 2017年 3月 大同大学大学院工学研究科機械工学専攻 (修士)
+        .career
+          .title
+            《経歴》
+          .text
+            %ul{type: "disc"}
+              %li 大手プラスチック製造会社に入社
+              %li 新規素材の技術開発部署で3年勤務
+              %li テックキャンプでプログラミングを学び、転職活動中(2020年6月更新）
+        .interest
+          .title
+            《プログラマーを目指す経緯》
+          .text#introduction
+            服が好きで、アパレルとエンジニアを結び付けた仕事がしたいと思い、
+            %br/
+            ITエンジニアを志しました。
+            %br/
+            現在は下記の理由により、プログラミングにどっぷりハマっています！
+          .text  
+            %ul{type: "disc"}
+              %li エラーの解決ができた時が快感！
+              %li アプリ制作が楽しい！
+              %li 毎日新しい発見がある！
+        .hobby
+          .title
+            《趣味》
+          .text
+            %ul{type: "disc"}
+              %li ペン回し (下記に動画有ります)
+              JapEn7th出演 ナランハ ペン回し フェスティバル(NPF)2018 5位
+              %li スケートボード 
+              %li 読書
+          .text#introduction_penspinning   
+    .profile_back
+      = link_to "戻る", root_path ,class: "profile_bottun"
+    .movie_title
+      %h2.name_title
+        私のフルパートの動画です！
     .movie
       .penspinning_movie
-        -# %iframe{allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/0CqFEDzDkIA", width: "560"}
+        %iframe{allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen: "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/0CqFEDzDkIA", width: "560"}
 
-  .moduru
-    = link_to "戻る", root_path ,class: "aaa"
+
   
+
+  -# %p.text
+  -#   ・平成7年生まれ（25歳）
+  -#   %br/
+  -#   ・学歴：明治学院大学法学部
+  -#   %br/
+  -#   ・趣味：ウクレレやゴルフ/スポーツ観戦/読書/映画・アニメ鑑賞
+  -#   %br/
+  -#   ・ラグビーを10年間続けて、中・高校では花園（全国大会）に出場。
+  -#   %br/
+  -#   %br/
+  -#   新卒で大手飲料メーカーに入社しました。
+  -#   %br/
+  -#   1年目、新人賞を受賞。2年目は上期MVPを受賞。
+  -#   %br/
+  -#   2020年10月に症候性てんかんを発症。
+  -#   %br/
+  -#   入院中に、アプリや会社のシステムに興味を持ち、自分も『世の中を便利にするシステム』を開発をしたい！！と思い転職を決意。
+  -#   %br/
+  -#   テックキャンプでプログラミングを学び、転職活動中(2020年05月15日更新）
