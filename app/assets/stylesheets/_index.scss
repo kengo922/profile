@@ -9,6 +9,7 @@ html, body{
   background-image: image-url("98e5e926.jpg");
   background-size: cover;
   height: 700px;
+  background-attachment: fixed;
   // background-size: contain;
   // width: 100%;
   // height: 700px;
@@ -29,7 +30,6 @@ html, body{
   height: 100%;
   background: rgba(0,0,0,0.6);
 }
-
 .header{
   height: 20px;
   width: 100%;
@@ -39,6 +39,7 @@ html, body{
   top: 0px;
   left: 0px;
 }
+
 .secondary{
   margin: 0;
   position: absolute;
@@ -46,20 +47,27 @@ html, body{
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
-
+}
+.title{
+  margin: 10px 0 30px 0;
+}
+.index_title{
+  font-size: 40px;
+  font-family: "Courier New", Courier, Monaco;
+  color: white;
+  font-weight:normal; 
 }
 .time{
   text-align:center;
   font-size: 0;
 }
 
-.view_clock,.view_area {
+.view_clock {
   color: white;
   font-family: "Courier New", Courier, Monaco;
   display: inline-block;
   font-size: 16px;
 }
-
 
 .wrap {
   text-align:center;

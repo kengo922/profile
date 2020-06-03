@@ -1,16 +1,18 @@
 .wrapper#section
   .main
     %header.header
+      .header__title
+        = link_to "管理者画面", mypage_products_path , class: "header__title--text"
     .secondary 
-      .logo
-        = image_tag asset_path("kengo_matsuno_plofile1.png"), alt: "icon-02.png",class: "image"
+      .title
+        %h1.index_title
+          Kengo Matsuno Plofile 
       .time
         .view_clock 
-        .view_area 
       %nav.nav
         %ul.wrap
           %li.inline-block
-            = link_to "PROFILE", root_path ,class: "word"
+            = link_to "PROFILE", profile_products_path ,class: "word"
           %li.inline-block
             = link_to "SKILL", root_path ,class: "word"
           %li.inline-block
@@ -19,7 +21,7 @@
             = link_to "CONTACT", root_path ,class: "word"
     %footer.footer
       .footer__title
-        = link_to "2020 Creator:Kengo Matsuno", '#', class: "footer__title--text"
+        = link_to "2020 製作者：松野健吾" ,'#', class: "footer__title--text"
 
 
 

@@ -64,3 +64,4 @@ gem "haml-rails"
 gem "pry-rails"
 gem 'jquery-rails' #JSを起動させる為に導入した
 gem 'jquery-bgswitcher-rails'
+gem 'dotenv-rails'
