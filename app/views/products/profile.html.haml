@@ -1,0 +1,20 @@
+.profile_wrapper
+  .profile_main
+    .profile_title 
+      %h1.profile_main_title
+        Plofile
+    .profile_image_career
+      .profile_image
+        = image_tag asset_path("nantyan.jpg"),class: "picture", alt: "nantyan.jpg"
+      .profile_career
+        .career_title
+          ・名前
+          .name
+            松野健吾
+    .movie
+      .penspinning_movie
+        -# %iframe{allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/0CqFEDzDkIA", width: "560"}
+
+  .moduru
+    = link_to "戻る", root_path ,class: "aaa"
+  
