@@ -1,0 +1,28 @@
+.skill_wrapper {
+  background-image: image-url("japen4th.jpg"); //猫の写真
+  background-position: center center; //右に寄せている 縦は中央
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-origin: content-box;
+  height: 100%;
+  
+}
+.skill_main{
+  height: 100%;
+  background: rgba(255,255,255,0.7); //背景を白くぼかす
+}
+.skill_title {
+  margin:0 auto;
+  width: 600px;
+  height: 100px;
+  line-height:100px;
+  margin-bottom: 40px;
+}
+
+.skill_main_title{
+  font-size: 40px;
+  font-family: "Courier New", Courier, Monaco;
+  color: black;
+  font-weight:normal; 
+  text-align:center;
+}

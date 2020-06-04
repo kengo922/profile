@@ -1,0 +1,123 @@
+.profile_wrapper {
+  background-image: image-url("cat.jpg"); //猫の写真
+  background-position: right center; //右に寄せている 縦は中央
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.profile_main{
+  height: 100%;
+  background: rgba(255,255,255,0.7); //背景を白くぼかす
+}
+.profile_title {
+  margin:0 auto;
+  width: 600px;
+  height: 100px;
+  line-height:100px;
+  margin-bottom: 40px;
+}
+
+.profile_main_title{
+  font-size: 40px;
+  font-family: "Courier New", Courier, Monaco;
+  color: black;
+  font-weight:normal; 
+  text-align:center;
+}
+
+
+.profile_image_career{
+  width: 900px;
+  margin: 30px 20px 0 20px; //上 右 下 左
+  border-style:#f6f6f6;
+  margin: 0 auto; //この箱を中央に配置
+  display: flex; //横並び
+  justify-content: space-evenly; //適当に良い感じで横並び
+  font-family: "Courier New", Courier, Monaco;
+}
+
+//プロフィール画像
+.profile_image{
+  max-width: 50%;
+  margin-top: 20px;
+}
+.picture{
+  width: 350px;
+  height: 450px;
+}
+
+
+//自己紹介内容
+.profile_career{
+  width: 550px;
+  height: auto;
+}
+.name{
+  text-align:center;
+  font-size: 30px;
+}
+
+
+.title{
+  text-align: left;
+  font-size: 17px;
+  margin: 5px 0 0 15px; //上 右 下 左
+  font-weight:bold; 
+}
+.text{
+  font-size: 15px;
+  text-align: left;
+  margin-left: 10px;
+}
+.text_educational{
+  list-style: none; //点消去
+  
+}
+#introduction{
+  text-indent: 1em; //字下げ(インデントを空ける)
+  margin-left: 20px;
+}
+
+.home_back{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottun{
+  margin:10px 0;
+  font-size: 15px;
+  color: black;
+  text-align:center;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 100px;
+  width:200px;
+  line-height:30px;
+  height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.name_title{
+  text-align:center;
+}
+
+.movie{
+  margin:0 auto;
+  margin-top: 20px;
+  width: 700px;
+  height: 600px;
+}
+.penspinning_movie{
+  position: relative;
+  height: 0;
+  padding: 30px 0 56.25%;
+  overflow: hidden;
+  }
+.penspinning_movie iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
