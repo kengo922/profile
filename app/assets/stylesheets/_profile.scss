@@ -3,8 +3,6 @@
   background-position: right center; //右に寄せている 縦は中央
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
-
 }
 .profile_main{
   height: 100%;
@@ -79,14 +77,14 @@
   margin-left: 20px;
 }
 
-.profile_back{
+.home_back{
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.profile_bottun{
+.bottun{
   margin:10px 0;
   font-size: 15px;
   color: black;
