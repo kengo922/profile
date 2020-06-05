@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     collection do
       get 'mypage' #マイページ(製作者のみ入れるページ)
       get 'profile' #プロフィール 
-      get 'skill' #プロフィール        
+      get 'skill' #プロフィール 
+             
     end
   end
 end
