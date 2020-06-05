@@ -1,8 +1,41 @@
 .skill_wrapper
   .skill_main
+    %header.header_skill
+      .header_skill_title
     .skill_title 
       %h1.skill_main_title
         Skill
+    .skill_explanation
+      .language
+        .skill_language_title
+          《使用言語》
+        .skill_language_word
+          Ruby/Ruby on Rails,Javascript,jQuery
+      .language
+        .skill_language_title
+          《データーベース》
+        .skill_language_word
+          MySQL
+      .language
+        .skill_language_title
+          《インフラ関連》
+        .skill_language_word
+          aws(EC2、S3等),Docker/docker-compose,Heroku
+      .language
+        .skill_language_title
+          《開発ツール》
+        .skill_language_word
+          Github,doucerhub,Visual Studio Code
+      .language
+        .skill_language_title
+          《現在勉強中の内容》
+        .skill_text
+          %ul{type: "disc"}
+            %li Docker/docker-composeを使用したアプリ制作、AWSへのデプロイ
+            %li Ruby on Railsの知識を深めるため、railsチュートリアルの実施中
+          
 
-    .home_back
-      = link_to "戻る", root_path ,class: "bottun"
+    .skill_back
+      = link_to "戻る", root_path ,class: "skill_bottun"
+    %footer.footer_skill
+      .footer_skill_title
