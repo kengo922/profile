@@ -1,22 +1,25 @@
 .skill_wrapper {
   background-image: image-url("japen4th.jpg"); //猫の写真
-  background-position: center center; //右に寄せている 縦は中央
+  background-position: center top; //右に寄せている 縦は中央
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-origin: content-box;
   height: 100%;
+  margin: 0 auto;
+
   
 }
 .skill_main{
+  width: 100%;
   height: 100%;
-  background: rgba(255,255,255,0.7); //背景を白くぼかす
+  background: rgba(255,255,255,0.8); //背景を白くぼかす
 }
 .skill_title {
   margin:0 auto;
   width: 600px;
   height: 100px;
   line-height:100px;
-  margin-bottom: 40px;
+
 }
 
 .skill_main_title{
@@ -25,4 +28,84 @@
   color: black;
   font-weight:normal; 
   text-align:center;
+}
+
+.header_skill{
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.skill_explanation{
+  width: 900px;
+  height: 400px;
+  // background-color: blue;
+  border-style:#f6f6f6;
+  font-family: "Courier New", Courier, Monaco;
+  margin: 0 auto; //この箱を中央に配置
+}
+.language{
+  width: 600px;
+  margin: 0 auto; //この箱を中央に配置
+  // background-color: burlywood;
+}
+
+.skill_language_title{
+  text-align: left;
+  font-size: 15px;
+  margin: 20px 0 0 15px; //上 右 下 左
+  font-weight:bold; 
+}
+
+.skill_language_word{
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  // background-color: silver;
+  border-bottom: double 5px black;
+}
+
+.skill_text{
+  font-size: 15px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+.skill_back{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill_bottun{
+  margin:10px 0;
+  font-size: 15px;
+  color: black;
+  text-align:center;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 100px;
+  width:200px;
+  line-height:30px;
+  height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer_skill {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  background-color: white;
+}             
+.footer_skill_title{
+  text-align: center;
+  line-height: 20px; //高さ調整
 }
