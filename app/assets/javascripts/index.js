@@ -1,22 +1,4 @@
 
-//時間を表示するJS
-timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
-function clock() {
-	document.getElementById("clock").innerHTML = getNow();
-}
-
-function getNow() {
-	var now = new Date();
-	var year = now.getFullYear();
-	var mon = now.getMonth()+1; //１を足すこと
-	var day = now.getDate();
-	var hour = now.getHours();
-	var min = now.getMinutes();
-	var sec = now.getSeconds();
-	//出力用
-	var s = `${year}/${mon}/${day} ${hour}:${min}:${sec}  JP `; 
-	return s;
-}
 
 //画面のサイズを自動で変更するJS
 $(document).ready(function () {
