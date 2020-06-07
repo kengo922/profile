@@ -1,24 +1,15 @@
-# README
+## アプリ名
+Profile and portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 制作背景
+　私のことを知ってい頂くため、自己紹介サイトを作成しました。
 
-Things you may want to cover:
+## 開発状況
+### 動作概要  
+  - URL  :  
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 開発環境  
+  - 開発言語  :  Ruby/Ruby on Railsi 
+  - 開発ツール  :  Github/Visual Studio Code/heroku  
+  - データベース  :  MySQL  
+  - 人数  :  1人  
