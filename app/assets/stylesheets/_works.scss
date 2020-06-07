@@ -53,14 +53,14 @@
 
 
 
-.works_title,.works_url_title,.works_github_title,.works_explanationb_title{
+.works_title,.works_url_title,.works_github_title,.works_explanationb_title,.works_basic_title{
   text-align: left;
   font-size: 15px;
   margin: 10px 0 0 15px; //上 右 下 左
   font-weight:bold; 
 }
 
-.works_title_name,.works_url,.works_github,.works_explanation{
+.works_title_name,.works_url,.works_github,.works_explanation,.works_pass{
   margin-top: 10px;
   font-size: 15px;
   text-align: center;
@@ -80,6 +80,9 @@
   font-size: 8px;
   text-align: center;
 }
+
+
+
 .works_back{
   margin-top: 60px;
   display: flex;
