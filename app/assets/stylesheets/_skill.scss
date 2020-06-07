@@ -3,10 +3,8 @@
   background-position: center top; //右に寄せている 縦は中央
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-origin: content-box;
+  background-size: cover;
   height: 100%;
-  margin: 0 auto;
-
   
 }
 .skill_main{
@@ -42,7 +40,6 @@
 
 .skill_explanation{
   width: 900px;
-  height: 400px;
   // background-color: blue;
   border-style:#f6f6f6;
   font-family: "Courier New", Courier, Monaco;
@@ -108,4 +105,10 @@
 .footer_skill_title{
   text-align: center;
   line-height: 20px; //高さ調整
+}
+@media screen and (min-width: 480px){
+  .body{
+    width: 375px;
+  }
+
 }
