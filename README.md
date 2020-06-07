@@ -6,7 +6,7 @@ Profile and portfolio
 
 ## 開発状況
 ### 動作概要  
-  - URL  :  
+  - URL  :  https://kengo-matsuno-v2.herokuapp.com/
 
 ### 開発環境  
   - 開発言語  :  Ruby/Ruby on Railsi 
