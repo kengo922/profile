@@ -14,7 +14,6 @@ function getNow() {
 	var min = now.getMinutes();
 	var sec = now.getSeconds();
 	//出力用
-	var s = `${year}/${mon}/${day} ${hour}:${min}:${sec}  JP `; 
 	var s = year + "/" + mon + "/" + day + " " + hour + ":" + min + ":" + sec + " " + "JP"; 
 	return s;
 }
