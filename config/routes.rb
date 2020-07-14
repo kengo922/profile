@@ -1,12 +1,13 @@
-Rails.application.routes.draw do 
+Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: "products#index"
-  resources :products do 
+  resources :products do
     collection do
       get 'mypage' #マイページ(製作者のみ入れるページ)
-      get 'profile' #プロフィール 
-      get 'skill' #プロフィール 
+      get 'profile' #プロフィール
+      get 'skill' #プロフィール
       get 'contact'
+      get 'hobby'
       get 'works'
     end
   end

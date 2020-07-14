@@ -2,7 +2,7 @@
   .skill_main
     %header.header_skill
       .header_skill_title
-    .skill_title 
+    .skill_title
       %h1.skill_main_title
         Skill
     .skill_explanation
@@ -10,9 +10,7 @@
         .skill_language_title
           《プログラミング言語》
         .skill_language_word
-          Ruby/Ruby on Rails
-          %br/
-          Javascript, jQuery, Rspec, Mini test
+          Ruby/Ruby on Rails, Javascript, jQuery, Rspec, Mini test
       .language
         .skill_language_title
           《データーベース》
@@ -22,24 +20,27 @@
         .skill_language_title
           《インフラ》
         .skill_language_word
-          AWS(EC2、S3等), Heroku
-          %br/
-          Docker/docker-compose, CircleCI(自動テスト)
+          AWS(EC2、S3等), Heroku, Docker/docker-compose, CircleCI
       .language
         .skill_language_title
           《開発ツール》
         .skill_language_word
-          Git hub,Docker hub, 
+          Git hub,Docker hub, Visual Studio Code, AWS Cloud9
+      .language
+        .skill_language_title
+          《現在勉強中の内容》
+        .skill_text
+          私は現在、多くのIT企業で導入が増えているDockerについて勉強しています。
+          現時点では、公式サイトを参考にしながらですがdokcerfile、docker-compose.ymlの記述仕方やコードの意味を理解する勉強をしています。
+          また、基本的なコマンド操作(docker imageのpushやpull、コンテナーの立ち上げ等)は理解したので、
+          開発環境にdockerを導入してアプリ制作などを行っております。
           %br/
-          Visual Studio Code, AWS Cloud9
-      -# .language
-      -#   .skill_language_title
-      -#     《現在勉強中の内容》
-      -#   .skill_text
-      -#     %ul{type: "disc"}
-      -#       %li Docker/docker-composeを使用したアプリ制作、AWSへのデプロイ
-      -#       %li railsチュートリアルの実施中
-          
+          　しかし、本番環境にdockerを適用したり、複数コンテナーを立ち上げるようなdockerfile、docker-compose.ymlの作成ができないので、
+          それらができるようにもっと勉強していく予定です。
+          %br/
+          　アプリ制作に関しては、Railsチュートリアルの復習や自身が触ったことのない機能を作成したりして、railsで開発技術向上を行っております。
+          %br/
+          今後は、SWiftやGo等のトレンドである技術にも挑戦し、幅広い分野で開発できるエンジニアになりたいと考えています。
 
     .skill_back
       = link_to "戻る", root_path ,class: "skill_bottun"

@@ -5,7 +5,7 @@
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
-  
+
 }
 .skill_main{
   width: 100%;
@@ -15,16 +15,16 @@
 .skill_title {
   margin:0 auto;
   width: 600px;
-  height: 100px;
+  height: 60px;
   line-height:100px;
 
 }
 
 .skill_main_title{
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Courier New", Courier, Monaco;
   color: black;
-  font-weight:normal; 
+  font-weight:normal;
   text-align:center;
 }
 
@@ -39,14 +39,14 @@
 }
 
 .skill_explanation{
-  width: 900px;
+  width: 1000px;
   // background-color: blue;
   border-style:#f6f6f6;
   font-family: "Courier New", Courier, Monaco;
   margin: 0 auto; //この箱を中央に配置
 }
 .language{
-  width: 600px;
+  width: 900px;
   margin: 0 auto; //この箱を中央に配置
   // background-color: burlywood;
 }
@@ -54,19 +54,21 @@
 .skill_language_title{
   text-align: left;
   font-size: 15px;
-  margin: 20px 0 0 15px; //上 右 下 左
-  font-weight:bold; 
+  margin: 15px 0 0 15px; //上 右 下 左
+  font-weight:bold;
 }
 
 .skill_language_word{
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
   // background-color: silver;
   border-bottom: double 5px black;
 }
 
 .skill_text{
+  padding-top: 10px;
+  text-indent: 1em;
   font-size: 15px;
   text-align: left;
   margin-left: 10px;
@@ -74,14 +76,14 @@
 
 
 .skill_back{
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .skill_bottun{
-  margin:10px 0;
+  margin:5px 0;
   font-size: 15px;
   color: black;
   text-align:center;
@@ -101,7 +103,7 @@
   bottom: 0;
   height: 20px;
   background-color: white;
-}             
+}
 .footer_skill_title{
   text-align: center;
   line-height: 20px; //高さ調整
