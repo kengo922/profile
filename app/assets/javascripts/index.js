@@ -14,20 +14,20 @@ function getNow() {
 	var min = now.getMinutes();
 	var sec = now.getSeconds();
 	//出力用
-	var s = year + "/" + mon + "/" + day + " " + hour + ":" + min + ":" + sec + " " + "JP"; 
+	var s = year + "/" + mon + "/" + day + " " + hour + ":" + min + ":" + sec + " " + "JP";
 	return s;
 }
 
 //画面のサイズを自動で変更するJS
 $(document).ready(function () {
     hsize = $(window).height();
-    $("section").css("height", hsize + "px");
+    $("section").css("height", "hsize" + "px");
   });
   $(window).resize(function () {
     hsize = $(window).height();
     $("section").css("height", hsize + "px");
 	});
-	
+
 	jQuery(function($) {
     $('.wrapper').bgSwitcher({
         images: ['assets/bg1.jpg','assets/bg2.jpg','assets/bg3.jpg'], // 切替背景画像を指定

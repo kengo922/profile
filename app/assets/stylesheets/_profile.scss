@@ -20,13 +20,13 @@
   font-size: 40px;
   font-family: "Courier New", Courier, Monaco;
   color: black;
-  font-weight:normal; 
+  font-weight:normal;
   text-align:center;
 }
 
 
 .profile_image_career{
-  width: 900px;
+  width: 1000px;
   margin: 30px 20px 0 20px; //上 右 下 左
   border-style:#f6f6f6;
   margin: 0 auto; //この箱を中央に配置
@@ -48,7 +48,7 @@
 
 //自己紹介内容
 .profile_career{
-  width: 550px;
+  width: 900px;
   height: auto;
 }
 .name{
@@ -60,8 +60,8 @@
 .title{
   text-align: left;
   font-size: 17px;
-  margin: 5px 0 0 15px; //上 右 下 左
-  font-weight:bold; 
+  margin: 10px 0 0 15px; //上 右 下 左
+  font-weight:bold;
 }
 .text{
   font-size: 15px;
@@ -70,7 +70,7 @@
 }
 .text_educational{
   list-style: none; //点消去
-  
+
 }
 #introduction{
   text-indent: 1em; //字下げ(インデントを空ける)
