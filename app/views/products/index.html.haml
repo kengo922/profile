@@ -3,10 +3,10 @@
     %header.header
       .header__title
         -# = link_to "管理者画面", mypage_products_path , class: "header__title--text"
-    .secondary 
+    .secondary
       .title
         %h1.index_title
-          Kengo Matsuno Plofile 
+          Kengo Matsuno Plofile
       .time
         .view_clock#clock
       %nav.nav
@@ -17,6 +17,8 @@
             = link_to "SKILL", skill_products_path ,class: "word"
           %li.inline-block
             = link_to "WORKS", works_products_path ,class: "word"
+          %li.inline-block
+            = link_to "HOBBY", hobby_products_path ,class: "word"
           %li.inline-block
             = link_to "CONTACT", contact_products_path ,class: "word"
     %footer.footer

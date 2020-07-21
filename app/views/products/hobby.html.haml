@@ -1,0 +1,46 @@
+.hobby_wrapper
+  .hobby_main
+    %h1.hobby_main_title
+      Plofile
+    .hobby_image_career
+      .hobby_image
+        = image_tag asset_path("pic0109.png"),class: "hobby_picture", id:"hobby_pictures" ,alt: "nantyan.jpg"
+        = image_tag asset_path("skate.jpg"),class: "hobby_picture", id:"hobby_pictures" ,alt: "nantyan.jpg"
+      .hobby_career
+        .hobby
+          .hobby_title
+            《趣味》
+          .hobby_text1
+            %ul{type: "disc"}
+              %li ペン回し
+              (Japen7th出演 ナランハペン回しフェスティバル 2018年 5位)
+              %li スケートボード
+        .hobby1
+          .hobby_title1
+            《ペン回しについて》
+          .hobby_text2
+            　高校1年生の時に、弟に見せてもらったペン回しの動画を見た際、その凄さに衝撃を受けそこからペン回しを競技として始めました。
+            %br/
+            　高校生時代は、時間があればずっとペン回しの練習をしていました。その成果もあり、始めて1年後ぐらいで、多くのペン回し動画作品に参加することができました。
+            今でも海外からの出演依頼や国内からの出演依頼があるため、多くの作品に出演しております。
+            %br/
+            　この趣味に出会って10年以上経ちますが、今でもずっと練習をしております。
+        .hobby2
+          .hobby_title1
+            《スケートボードについて》
+          .hobby_text2
+            　大学生時代、ストリートファッションが好きで、特にスケートボードブランドの服を好んで着ていました。
+            %br/
+            　スケーターの格好の真似だけではなく、自身もスケボーを上手く乗れるようになりたいと思い、2年程前から始めました。
+            始めた当初は滑ること自体が難しく、練習しても上手くならないため、全然練習していませんでした。しかし、1年程前にスケートパークに行った際、リアルなスケーターの滑りを見て、憧れるようになり、そこから本格的に練習を初めした。
+            %br/
+            　今では、30cm程の高さの障害物を超えたり、物に乗ったりできまでに成長しました。また、板を回したりする技とかもできるようになりました。
+
+    .home_back
+      = link_to "戻る", root_path ,class: "bottun"
+    .movie_title
+      %h2.name_title
+        私のフルパートの動画です！
+    .movie
+      .penspinning_movie
+        %iframe{allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen: "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/0CqFEDzDkIA", width: "560"}

@@ -1,13 +1,37 @@
 .works_wrapper
   .works_main
-    .works_main_title 
+    .works_main_title
       %h1.works_main_title
         works
     .all_works
       .works
         .works_title
           《作品タイトル》
-        .works_title_name 
+        .works_title_name
+          ペン回し専用の動画投稿フォーラム Penspinning Video
+        .works_image
+          = image_tag asset_path("penspin.png"),class: "works_picture" ,alt: "works"
+        .works_url_title
+          《URL》
+        .works_url
+          %a{href: "http://www.kengo-penspinning-app.xyz/", class: "works_word"} http://www.kengo-penspinning-app.xyz/
+        .works_note
+          URLをクリックするとページに飛べます
+        .works_github_title
+          《git hub》
+        .works_github
+          %a{href: "https://github.com/kengo922/penspinning", class: "works_word"} https://github.com/kengo922/penspinning
+        .works_note
+          URLをクリックするとページに飛べます
+        .works_explanationb_title
+          《説明》
+        .works_explanation#explanation_sub
+          ペン回し動画専用の動画共有サイトを作成しました!!
+
+      .works
+        .works_title
+          《作品タイトル》
+        .works_title_name
           自動配色選択コーディネートアプリ Tetrads(テトラード)
         .works_image
           = image_tag asset_path("work1.png"),class: "works_picture" ,alt: "works"
@@ -27,11 +51,11 @@
           《説明》
         .works_explanation#explanation_sub
           自身の持っている服の配色を登録する事で、ボタン一つでランダムに配色コーディネートを決定してくれるアプリを作成しました。
-      
+
       .works
         .works_title
           《作品タイトル》
-        .works_title_name 
+        .works_title_name
           Railsチュートリアル
         .works_image
           = image_tag asset_path("rails_tutorial.png"),class: "works_picture" ,alt: "works"
@@ -49,7 +73,7 @@
       .works
         .works_title
           《作品タイトル》
-        .works_title_name 
+        .works_title_name
           自己紹介サイト
         .works_image
           = image_tag asset_path("profile.png"),class: "works_picture" ,alt: "works"
@@ -63,11 +87,11 @@
           《説明》
         .works_explanation#explanation_sub
           私のことを知って頂くための自己紹介サイトを作成しました！
-      
+
       .works
         .works_title
           《作品タイトル》
-        .works_title_name 
+        .works_title_name
           フリマサイト (３人１チームのアジャイル開発で制作)
         .works_image
           = image_tag asset_path("furima_app.png"),class: "works_picture" ,alt: "works"
@@ -91,11 +115,11 @@
           《説明》
         .works_explanation#explanation_sub
           模擬ですがフリーマーケットサイトを作成しました。約1ヶ月間、3人チームでアジャイル開発を行いました。
-      
+
       .works
         .works_title
           《作品タイトル》
-        .works_title_name 
+        .works_title_name
           chat-space
         .works_image
           = image_tag asset_path("chat-space.gif"),class: "works_picture" ,alt: "works"

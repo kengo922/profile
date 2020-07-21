@@ -1,33 +1,33 @@
-.profile_wrapper {
+.hobby_wrapper {
   background-image: image-url("cat.jpg"); //猫の写真
   background-position: right center; //右に寄せている 縦は中央
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.profile_main{
+.hobby_main{
   height: 100%;
-  background: rgba(255,255,255,0.85); //背景を白くぼかす
+  background: rgba(255,255,255,0.89); //背景を白くぼかす
 }
-.profile_title {
-  margin:0 auto;
+.hobby_title {
+  margin: 0 auto;
   width: 600px;
   height: 100px;
   line-height:100px;
-  margin-bottom: 40px;
+  text-align: center;
 }
-
-.profile_main_title{
+.hobby_main_title{
   font-size: 40px;
   font-family: "Courier New", Courier, Monaco;
   color: black;
   font-weight:normal;
-  text-align:center;
+  text-align: center;
 }
 
 
-.profile_image_career{
+//画像関連
+.hobby_image_career{
   width: 1000px;
-  margin: 30px 20px 0 20px; //上 右 下 左
+  margin: 20px 20px 0 5px; //上 右 下 左
   border-style:#f6f6f6;
   margin: 0 auto; //この箱を中央に配置
   display: flex; //横並び
@@ -36,56 +36,58 @@
 }
 
 //プロフィール画像
-.profile_image{
+.hobby_image{
   max-width: 50%;
   margin-top: 20px;
 }
-.picture{
-  width: 350px;
-  height: 450px;
+.hobby_picture{
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
 }
 
 
 //自己紹介内容
-.profile_career{
-  width: 900px;
-  height: auto;
-}
-.name{
-  text-align:center;
-  font-size: 30px;
-}
+.hobby_career{
+  width: 800px;
 
-
-.title{
+}
+.hobby_title{
   text-align: left;
   font-size: 17px;
-  margin: 10px 0 0 15px; //上 右 下 左
+  margin: 10px 0 0 30px; //上 右 下 左
   font-weight:bold;
 }
-.text{
-  font-size: 15px;
+.hobby_text1{
+  font-size: 16px;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 5px;
 }
-.text_educational{
-  list-style: none; //点消去
 
-}
-#introduction{
-  text-indent: 1em; //字下げ(インデントを空ける)
+
+.hobby_title1{
+  text-align: left;
+  font-size: 17px;
+  margin: 30px 0 0 30px; //上 右 下 左
+  font-weight:bold;
+  }
+.hobby_text2{
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 20px;
   margin-left: 20px;
 }
 
-.profile_home_back{
-  margin-top: 5px;
+// ボタン関連
+.home_back{
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.profile_bottun{
-  margin:30px 0 60px;
+.bottun{
+  margin:10px 0;
   font-size: 15px;
   color: black;
   text-align:center;
@@ -98,6 +100,27 @@
   font-weight: bold;
   text-decoration: none;
 }
+
+//動画関連
 .name_title{
   text-align:center;
+}
+.movie{
+  margin:0 auto;
+  margin-top: 20px;
+  width: 700px;
+  height: 600px;
+}
+.penspinning_movie{
+  position: relative;
+  height: 0;
+  padding: 30px 0 56.25%;
+  overflow: hidden;
+  }
+.penspinning_movie iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
