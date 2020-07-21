@@ -1,9 +1,14 @@
 .contact_wrapper {
-  background-color: white;
+  background-image: image-url("17545.jpg"); //写真
+  background-position: center top; //右に寄せている 縦は中央
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
 }
 .contact_main{
   width: 100%;
-  background: rgba(255,255,255,0.8); //背景を白くぼかす
+  height: 100vh;
+  background: rgba(255,255,255,0.1); //背景を白くぼかす
 }
 .contact_title {
   margin:0 auto;
@@ -17,7 +22,7 @@
   font-size: 40px;
   font-family: "Courier New", Courier, Monaco;
   color: black;
-  font-weight:normal; 
+  font-weight:normal;
   text-align:center;
 }
 
@@ -25,7 +30,7 @@
   width: 800px;
   height: 250px;
   font-family: "Courier New", Courier, Monaco;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 
@@ -48,14 +53,14 @@
   text-align: left;
   font-size: 17px;
   margin: 5px 0 0 15px; //上 右 下 左
-  font-weight:bold; 
+  font-weight:bold;
 }
 .sns_text{
   font-size: 15px;
   text-align: left;
   margin-left: 10px;
 
-  
+
 }
 .sns_flex{
   list-style: none; //点消去
@@ -69,7 +74,7 @@
 
 .inquiry{
   text-decoration: none; //アンダーライン消去
-  color: black; 
+  color: black;
   font-size: 15px;
 }
 
