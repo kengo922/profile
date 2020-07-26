@@ -1,6 +1,6 @@
 .contact_wrapper
   .contact_main
-    .contact_title 
+    .contact_title
       %h1.contact_main_title
         Contact
     .contact_explanation
@@ -15,9 +15,13 @@
         .sns_text
           %ul.sns_flex{type: "disc"}
             %li
-              %a.icon{href: "https://twitter.com/kengo_sr" } 
+              %a.icon{href: "https://twitter.com/kengo_sr" }
                 %span.fa.fa-twitter
                   kengo_sr
+            %li
+              %a.icon{href: "https://qiita.com/kengo922" }
+                %span.fa.fa-square
+                  Qiita
             %li
               %a.icon{href: "https://github.com/kengo922"}
                 %span.fa.fa-github
@@ -27,6 +31,6 @@
           《問い合わせ》
         .contact_mail
           %a{href: "https://forms.gle/4wt1hRc23kNRmJYj8", class: "inquiry"}
-            お問い合わせフォーム        
+            お問い合わせフォーム
       .contact_back
-        = link_to "戻る", root_path ,class: "bottun"
+        = link_to "戻る", root_path ,class: "contact_bottun"
